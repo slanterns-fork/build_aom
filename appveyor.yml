@@ -52,8 +52,8 @@ init:
 - echo %generator%
 # Install nasm and newew cmake
 install:
-- cinst nasm cmake.install --installargs '"ADD_CMAKE_TO_PATH=System"'
-- set PATH=%PROGRAMFILES%\NASM;%PATH%
+- cinst nasm cmake
+- set PATH=%PROGRAMFILES%\CMake;%PROGRAMFILES%\NASM;%PATH%
 
 # Prepare Build with cmake
 before_build:
