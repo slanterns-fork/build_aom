@@ -23,6 +23,7 @@ matrix:
   fast_finish: true
 
 init:
+- vswhere
 # Clone last AOM code
 - git clone -b master --single-branch https://aomedia.googlesource.com/aom c:\projects\aom_src
 
