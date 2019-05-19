@@ -53,9 +53,7 @@ init:
 # Install nasm and newew cmake
 install:
 - cinst nasm cmake
-- cinst nasm cmake.install --installargs '"ADD_CMAKE_TO_PATH=User"'
-- set PATH=%PROGRAMFILES%\NASM;%PATH%
-- refreshenv
+- set PATH=%PROGRAMFILES%\CMake\bin;%PROGRAMFILES%\NASM;%PATH%
 
 # Prepare Build with cmake
 before_build:
