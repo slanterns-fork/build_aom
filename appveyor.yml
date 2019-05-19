@@ -50,9 +50,9 @@ init:
 - echo %APPVEYOR_BUILD_WORKER_IMAGE%
 - if "%APPVEYOR_BUILD_WORKER_IMAGE%"=="Visual Studio 2019 Preview" ( set generator="Visual Studio 16 2019%arch%" )
 - echo %generator%
-# Install nasm
+# Install nasm and newew cmake
 install:
-- cinst nasm
+- cinst nasm cmake
 - set PATH=%PROGRAMFILES%\NASM;%PATH%
 
 # Prepare Build with cmake
